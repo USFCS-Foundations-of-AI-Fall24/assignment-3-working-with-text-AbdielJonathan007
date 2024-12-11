@@ -1,5 +1,5 @@
 ## A representation of a document as a set of tokens.
-
+#Abd
 from collections import defaultdict
 from math import sqrt
 
@@ -24,6 +24,32 @@ def euclidean_distance(d1, d2) :
     return dist
 
 ## You implement this.
+# Cos similarity = d1 * d2 / ||d1|| * ||d2||
 def cosine_similarity(d1,d2) :
-    pass
+    # calculating the numerator
+    num = 0
+    for key in d1.tokens:
+        # Check if the current key is also in d2
+        if key in d2.tokens:
+            # If it is, multiply the counts and add to the dot product
+            num += d1.tokens[key] * d2.tokens[key]
+
+
+    # magnitudes
+    mag_d1 = 0
+    for value in d1.tokens.values():
+        mag_d1 += value ** 2
+    mag_d1 = sqrt(mag_d1)
+
+    mag_d2 = 0
+    for value in d2.tokens.values():
+        mag_d2 += value ** 2
+    mag_d2 = sqrt(mag_d2)
+
+    # checking if values happen to be zero
+    if mag_d1 == 0 or mag_d2 == 0:
+        return 0.0
+
+    return num / (mag_d1 * mag_d2)
+
 

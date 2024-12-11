@@ -6,10 +6,10 @@ class TestDocument(TestCase):
     def testinit(self):
         d = Document(true_class='pos')
         print(d.tokens['fish'])
-
+    # I changed here, ask the professor
     def test_addTokens(self):
         d = Document(true_class='pos')
-        d.add_tokens(['cat', 'dog', 'fish'])
+        d.add_tokens(['cat', 'dog', 'fish', 'cat', 'aardvark'])
         self.assertEqual(d.tokens['cat'], 2)
         self.assertEqual(d.tokens['aardvark'], 1)
 

@@ -14,9 +14,10 @@ This problem will give you some experience working with Pandas. In assignment 4 
 
 Please add a file called pandasExercise.py to your repo containing this part.
 
-First, read through 10 Minutes to PandasLinks to an external site.. There's a ton of other useful documentation of the pandas site as well.
+First, read through [10 Minutes to Pandas](https://pandas.pydata.org/docs/user_guide/10min.html). There's a ton of other useful documentation of the pandas site as well.
 
-The rest of these exercises use The Pandas CookbookLinks to an external site.. We'll also use the breast cancer dataset included in the GitHub repo. This is a classic ML dataset originally from the UCI ML data repositoryLinks to an external site..
+The rest of these exercises use [The Pandas Cookbook](https://github.com/PacktPublishing/Pandas-Cookbook). We'll also use the breast cancer dataset included in the GitHub repo. This is a classic ML dataset originally from the UCI ML data repositoryLinks to an external site..
+The Pandas cookbook itself is here: [https://www.packtpub.com/en-us/product/pandas-cookbook-9781784393878](https://www.packtpub.com/en-us/product/pandas-cookbook-9781784393878) - use your USFConnect credentials to log in. 
 
 **(5 points)** read Chapter 1. Then, write a function that will read in the breast cancer dataset and print out the classification column, which is the left-most column.
 
